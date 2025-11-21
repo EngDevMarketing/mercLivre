@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Adicione um arquivo CSS se necessário -->
+    <script src="produto.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const produtos = window.produtos; // Acessa o array de produtos do produto.js
+            const listaProdutos = document.getElementById('lista-produtos');
+
+            produtos.forEach(produto => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <h2>${produto.nome}</h2>
+                    <img src="${produto.imagem}" alt="${produto.nome}" />
+                    <p>Preço: ${produto.preco}</p>
+                    <p>${produto.descricao}</p>
+                    <a href="detalhes.html?id=${produto.id}">Ver detalhes</a>
+                `;
+                listaProdutos.appendChild(li);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Catálogo de Produtos</h1>
+    </header>
+    <main>
+        <ul id="lista-produtos"></ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Loja de Móveis</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Estilos específicos para a página de detalhes do produto */
+
+.container-produto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.imagem-produto {
+    flex: 1 1 500px;
+}
+
+.imagem-produto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.detalhes-produto {
+    flex: 1 1 300px;
+}
+
+.nome-produto {
+    font-size: 2.5em;
+    margin-top: 0;
+    color: #5d4037;
+}
+
+.preco-produto {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #8d6e63;
+    margin-bottom: 20px;
+}
+
+.descricao-produto {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.opcoes-compra {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+#quantidade {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#btn-adicionar {
+    padding: 12px 25px;
+    background-color: #5d4037;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-adicionar:hover {
+    background-color: #3e2723;
+}
+
+.especificacoes {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.especificacoes h3 {
+    color: #5d4037;
+}
+
+.especificacoes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.especificacoes li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .container-produto {
+        flex-direction: column;
+    }
+}
