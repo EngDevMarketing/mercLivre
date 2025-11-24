@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Móveis</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+    <h1>Bem-vindo à Loja de Móveis</h1>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="search-container">
+        <form action="/buscar" method="get">
+            <input type="text" name="q" placeholder="Pesquisar produtos..." />
+            <button type="submit">Buscar</button>
+        </form>
+        <div class="autocomplete-results"></div>
+    </div>
+</header>
+
+    <main>
+    <section id="produtos" class="produtos">
+        <h2>Produtos em Destaque</h2>
+        
+        <div class="produto-categoria" id="aparador,">
+    <h3>Aparador</h3><!-- TÍTULO DA CATEGORIA -->
+    <div class="grid-produtos">
+        <div class="produto" id="aparador" data-id="0001">
+            <a href="detalhe.html?id=0001">
+                <img src="imgCatalogo/img2001.png" alt="aparador" />
+                <h3>Aparador Belissima</h3>
+            </a>
+            <p>Estiloso, perfeito para sua sala de estar. </p>
+            <span class="preco">R$XXXXXX</span>
+            <a href="https://wa.me/+556194196210?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sof%C3%A1%20Moderno%20-%20R$%201.200,00." target="_blank" class="btn-whatsapp">
+                Contatar Vendedor
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="produto-categoria" id="mesas">
+    <h3>Mesas</h3>
+    <div class="grid-produtos">
+        <div class="produto" id="mesa-jantar-grande" data-id="2">
+            <a href="detalhe.html?id=2">
+                <img src="imagens/mesa1.jpg" alt="Mesa de Jantar" />
+                <h3>Mesa de Jantar</h3>
+            </a>
+            <p>Feita de madeira maciça, ideal para refeições em família.</p>
+            <span class="preco">R$ 850,00</span>
+            <a href="https://wa.me/5599999999999?text=%20Tenho%20interesse%20no%20Aparador%20Belissima%20ID=0001%C3%A1%20Moderno%20-%20R" target="_blank" class="btn-whatsapp">
+                Contatar Vendedor
+            </a>
+        </div>
+    </div>
+</div>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2024 Loja de Móveis. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/autocomplete.js"></script>
+    <script src="js/script-detalhe.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

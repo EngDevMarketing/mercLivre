@@ -1,0 +1,159 @@
+/* Estilos globais (aplicáveis a todas as páginas) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #5d4037;
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos do formulário de busca */
+form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+form button {
+    padding: 8px 12px;
+    background-color: #5d4037;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #3e2723;
+}
+
+/* Estilos dos botões padrão e links */
+button, .btn-whatsapp {
+    background-color: #5d4037;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+button:hover, .btn-whatsapp:hover {
+    background-color: #3e2723;
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+}
+/* Container para a busca e o autocomplete */
+.search-container {
+    position: relative;
+}
+
+/* Estilos para a lista de sugestões do autocomplete */
+.autocomplete-results {
+    position: absolute;
+    z-index: 999;
+    top: 100%; /* Posiciona a lista abaixo do campo de busca */
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-results div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.autocomplete-results div:hover {
+    background-color: #f4f4f4;
+}
+
+/* Esconde a lista por padrão */
+.autocomplete-results.hidden {
+    display: none;
+}

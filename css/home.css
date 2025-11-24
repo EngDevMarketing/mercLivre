@@ -1,0 +1,47 @@
+/* Estilos específicos para a página inicial (home) */
+
+.destaque {
+    background-color: #8d6e63;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.destaque h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin: 15px 0 5px;
+}
+
+.produto .preco {
+    font-weight: bold;
+    color: #8d6e63;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 15px;
+}
